@@ -1,0 +1,14 @@
+api:
+  build: .
+  command: go run main.go
+  ports:
+    - "8080:8080"
+  volumes:
+    - ./:/go/src/dockito
+  links:
+    - mongo
+  environment:
+    GO15VENDOREXPERIMENT: 1
+
+mongo:
+  image: "mongo:latest"
