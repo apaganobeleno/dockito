@@ -8,3 +8,4 @@ This app responds to 2 endpoints:
 
 /hello
 /who_are_you
+/count
