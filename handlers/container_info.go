@@ -11,5 +11,5 @@ func ContainerInfo(rw http.ResponseWriter, req *http.Request) {
 	if err != nil {
 		hostname = "... IDK!"
 	}
-	rw.Write([]byte("Responding From: " + hostname))
+	rw.Write([]byte("Dockito Responding From: " + hostname))
 }

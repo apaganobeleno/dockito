@@ -1,12 +1,13 @@
 package main
+
 import (
-  "log"
-  webo "webo/server"
-  "dockito/config"
+	"dockito/config"
+	"log"
+	webo "webo/server"
 )
 
-func main(){
+func main() {
 	s := webo.NewServer(config.DefineRoutes)
-  s.Start("8080")
-	defer log.Println("| dockito Closing")
+	s.Start("8080")
+	defer log.Println("| Dockito Closing")
 }
