@@ -26,5 +26,5 @@ func Count(rw http.ResponseWriter, req *http.Request) {
 
 	var count int
 	count, err = c.Count()
-	rw.Write([]byte("Visits Count: " + strconv.Itoa(count)))
+	rw.Write([]byte("Visit Count: " + strconv.Itoa(count)))
 }

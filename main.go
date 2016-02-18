@@ -8,6 +8,6 @@ import (
 
 func main() {
 	s := webo.NewServer(config.DefineRoutes)
-	s.Start("8080")
+	s.Start("8088")
 	defer log.Println("| Dockito Closing")
 }
